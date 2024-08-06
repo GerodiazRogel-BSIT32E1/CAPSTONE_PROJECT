@@ -47,19 +47,19 @@ if (isset($_SESSION['error'])) {
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/style2.css">
     <link rel="stylesheet" href="./css/tempsidebar.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Main Dashboard</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>\
+    <title>Statistics</title>
 </head>
 
 <body style="display: flex; flex-direction: row;">
     <div style="width: 16%; height: 100%;">
     <?php 
-        $activeMenu = 'dashboard';
+        $activeMenu = 'sendmessage';
         include('./components/sidebar.php'); 
         ?>
     </div>
     <div id="content" style="flex-grow: 1; height: 100%;">
-        <?php include('./components/BarGraph.php') ?>
+        <?php include('./components/SendMessageComponent.php') ?>
     </div>
 </body>
 
